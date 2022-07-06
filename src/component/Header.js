@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <nav className="nav">
         {items.map(item => (
-            <li className="nav__item">{item}</li>
+            <li className="nav__item"><a href={'#'+item}>{item}</a></li>
         ))}
     </nav>
   )

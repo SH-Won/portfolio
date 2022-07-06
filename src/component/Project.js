@@ -8,14 +8,14 @@ import ProjectItem from './ProjectItem';
      const scrollRef = useScrollEvent('up');
      console.log('project');
     return (
-        <div className="project-container">
+        <section className="project-container">
             <h2 style={{textAlign:'center'}}>프로젝트</h2>
             <section className="project-card-container" {...scrollRef}>
             {projects.map(project=>( <ProjectItem key={project._id} project={project}/>
             ))}
             </section>
             
-        </div>
+        </section>
     )
  }
  export default Project
