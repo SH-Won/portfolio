@@ -71,17 +71,30 @@ h3 {
 ul{
     margin:0;
     padding:0;
+    list-style: none;
 }
 .nav{
   padding:1rem;
   width:100%;
   display:flex;
   list-style: none;
-  justify-content: space-around;
+  justify-content: space-between;
   box-sizing: border-box;
 }
+.nav__title{
+  margin:0;
+  transform: rotateZ(-3deg)
+}
+.nav__item-list{
+  display:flex;
+  flex:1;
+  justify-content: space-evenly;
+
+}
 .nav__item{
-   font-size: 2rem;
+   flex:0 0 25%;
+   font-size: 1.2rem;
+   text-align: center;
 
 }
 .info{
