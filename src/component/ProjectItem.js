@@ -13,6 +13,13 @@ const ProjectItem = ({project}) => {
             ))}
         </ul>
     }
+    const information = () => {
+        return <ol className ="information">
+            {project.information.map((info,index) => (
+              <li key={index}>{info}</li>
+            ))}
+        </ol>
+    }
     const onClickHandler = (e) =>{
       console.log(e.target.tagName)
        if(e.target.tagName !== 'svg' && e.target.tagName !=='path') return;
@@ -21,19 +28,19 @@ const ProjectItem = ({project}) => {
        window.open(project[prop])
     }
     return (
-      <div className="project-card" key={project._id}>
+      <article className="project-card" key={project._id}>
         <Carousel carouselImages={project.url} />
-        
-        <div className="project-card-explain">
+        <section className="project-card-explain">
           <h1>{project.title}</h1>
-          <p>{project.explain}</p>
+          <span>{project.explain}</span>
+          {information()}
           {tools()}
           <ul className="link-list" onClick={onClickHandler}>
             <li className="github"><GitSVG color={'whitesmoke'}/></li>
             {project.link !=='' && <li className="link"><Site/></li>}
           </ul>
-        </div>
-      </div>
+        </section>
+      </article>
     );
 }
 
