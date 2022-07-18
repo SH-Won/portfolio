@@ -1,6 +1,5 @@
 import React,{useRef,useState,useEffect} from 'react'
 import style from '../styles/Carousel.module.css';
-// import {FaArrowLeft,FaArrowRight} from 'react-icons/fa'
 //이미지 캐러셀
 
 const Carousel = ({carouselImages}) => {
@@ -36,7 +35,6 @@ const Carousel = ({carouselImages}) => {
         setDirection(0);
         
         dirRef.current = 0;
-        console.log("images",images)
         current.parentElement.style.justifyContent='flex-end'
         current.style.transform=`translateX(${100 / images.length}%)`
         current.style.transition='transform 1s cubic-bezier(0.6, 0.35, 0, 1.04)';
@@ -82,8 +80,7 @@ const Carousel = ({carouselImages}) => {
          },0)
 
     }
-     console.log('render item');
-     console.log('dirRef',dirRef.current);
+    
     return (
         <div className={style.wrap}>
 
