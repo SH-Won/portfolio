@@ -107,6 +107,9 @@
     list-style-type: none;
 }
 
+.information{
+    letter-spacing: 0.1em;
+}
 
 /* .information{
     display:none;

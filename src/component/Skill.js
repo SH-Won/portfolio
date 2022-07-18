@@ -16,7 +16,7 @@ const Skill = () => {
           <img className ="info__img" src={skill.url} />
           <div className="info__explain">
             <h3 style={{marginTop:0,marginBottom:'0.6rem'}}>{skill.title}</h3>
-            {skill.explain}
+            <p style={{marginTop:0}}>{skill.explain}</p>
           </div>
         </article>
       ))}
