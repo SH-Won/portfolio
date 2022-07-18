@@ -7,7 +7,7 @@ const Header = () => {
         <h1 className="nav__title">sh</h1>
         <ul className="nav__item-list">
         {items.map(item => (
-            <li key={item._id} className="nav__item"><a href={'#'+item}>{item}</a></li>
+            <li key={item} className="nav__item"><a href={'#'+item}>{item}</a></li>
         ))}
         </ul>
     </nav>
