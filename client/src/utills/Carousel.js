@@ -80,7 +80,6 @@ const Carousel = ({carouselImages}) => {
          },0)
 
     }
-    
     return (
         <div className={style.wrap}>
 
