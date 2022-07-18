@@ -1,5 +1,5 @@
-import React from 'react'
-import Carousel from '../utills/carousel'
+import React from 'react';
+import Carousel from '../utills/Carousel';
 import GitSVG from '../svg/GitSVG';
 import Site from '../svg/Site';
 
