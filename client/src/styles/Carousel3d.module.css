@@ -16,6 +16,7 @@
     
     transform-style: preserve-3d;
     animation: bingle 5s 1s infinite linear;
+    -webkit-animation: bingle 5s 1s infinite linear;
 }
 .panel{
     position:absolute;
