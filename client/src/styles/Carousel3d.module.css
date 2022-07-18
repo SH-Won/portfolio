@@ -16,7 +16,9 @@
     
     transform-style: preserve-3d;
     animation: bingle 5s 1s infinite linear;
-    -webkit-animation: bingle 5s 1s infinite linear;
+    -webkit-animation: webkit-bingle 5s 1s infinite linear;
+    -moz-animation: moz-bingle 5s 1s infinite linear;
+    -o-animation: o-bingle 5s 1s infinite linear;
 }
 .panel{
     position:absolute;
@@ -43,8 +45,20 @@
         transform: rotateY(-360deg);
     } 
 }
-@-webkit-keyframes bingle{
+@-webkit-keyframes webkit-bingle{
     to{
         -webkit-transform: rotateY(-360deg);
     }
 }
+@-moz-keyframes moz-bingle {
+
+    to {
+      -moz-transform: rotate(-360deg);
+    }
+}
+@-o-keyframes o-bingle {
+
+    to {
+      -o-transform: rotate(-360deg);
+    }
+  }

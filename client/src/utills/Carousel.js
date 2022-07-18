@@ -17,6 +17,9 @@ const Carousel = ({carouselImages}) => {
      }
 
     },[])
+    useEffect(() => {
+
+    },[])
     
     
     function prev(){
@@ -77,7 +80,7 @@ const Carousel = ({carouselImages}) => {
          setTimeout(()=>{
             current.style.transition='none';
             current.style.transform=''
-         },100)
+         },0);
 
     }
     return (
