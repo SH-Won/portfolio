@@ -3,7 +3,7 @@ import { skills } from '../datas/Data'
 import useScrollEvent from '../hook/useScrollEvent'
 import Carousel_3D from '../utills/Carousel_3D'
 const Skill = () => {
-    const scrollRef = useScrollEvent('right');
+    const scrollRef = useScrollEvent('up');
 
   return (
     <section style={{boxSizing:'border-box'}} className="container skill" {...scrollRef}>
