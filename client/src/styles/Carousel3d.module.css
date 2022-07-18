@@ -41,5 +41,6 @@
 @keyframes bingle {
     to{
         transform: rotateY(-360deg);
+        -webkit-transform: rotateY(-360deg);
     } 
 }

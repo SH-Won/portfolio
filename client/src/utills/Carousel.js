@@ -77,7 +77,7 @@ const Carousel = ({carouselImages}) => {
          setTimeout(()=>{
             current.style.transition='none';
             current.style.transform=''
-         },0)
+         },)
 
     }
     return (
