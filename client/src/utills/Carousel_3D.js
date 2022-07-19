@@ -4,6 +4,7 @@ import style from '../styles/Carousel3d.module.css';
 
 const Carousel_3D = ({images}) =>{
     const carousel = useRef();
+    const panel = useRef();
     useEffect(()=>{
         const width = carousel.current.offsetWidth;
         const angle = 360 / images.length;
@@ -16,6 +17,10 @@ const Carousel_3D = ({images}) =>{
             carousel.current.children[i].style.opacity = '1';
         }
     },[images]);
+    
+    useEffect(() => {
+
+    },[]); 
     
     return (
         <div className={style.stage}>

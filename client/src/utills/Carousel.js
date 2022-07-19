@@ -9,17 +9,20 @@ const Carousel = ({carouselImages}) => {
     const dirRef = useRef(null);
     
     useEffect(()=>{
-     slider.current.style.width = `${100 * images.length}%`
-     
-     for(let i=0; i<images.length; i++){
+        slider.current.style.width = `${100 * images.length}%`
+        for(let i=0; i<images.length; i++){
         slider.current.children[i].style.paddingTop = `${68 / images.length}%`
-       // slider.current.children[i].style.flex = `1 0 ${100 /images.length}%`
-     }
-
+        // slider.current.children[i].style.flex = `1 0 ${100 /images.length}%`
+        }
     },[])
+
     useEffect(() => {
+        console.log('transition');
+        const {current} = slider;
+        current.style.transition='none';
+        current.style.transform=''
 
-    },[])
+    },[images])
     
     
     function prev(){
@@ -77,10 +80,9 @@ const Carousel = ({carouselImages}) => {
          // 비동기로 slider current transition 을 none 하지않으면
          // setImage가 실행되기전에 transform 되기 이전의 이미지 순서로 보여지기때문에
          // 버튼을 눌러도 이전 이미지가 한번 깜빡거림
-         setTimeout(()=>{
-            current.style.transition='none';
-            current.style.transform=''
-         },0);
+        //  setTimeout(()=>{
+            
+        //  },0);
 
     }
     return (

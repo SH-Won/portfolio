@@ -26,7 +26,7 @@ const useScrollEvent = (direction) => {
         if(entry.isIntersecting){
             console.log(entry);
             current.style.transitionProperty = 'all'
-            current.style.transitionDuration = "1s"
+            current.style.transitionDuration = "0.8s"
             current.style.transitionTimingFunction ="linear"
             current.style.opacity = 1
             current.style.transform = "translate3d(0,0,0)"
