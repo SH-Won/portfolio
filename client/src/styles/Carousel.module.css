@@ -54,6 +54,7 @@
     width:100%;
     
     padding-top: 12%;
+    overflow:hidden;
 }
 .item > img{
     position:absolute;
