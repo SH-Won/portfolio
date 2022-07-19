@@ -16,6 +16,17 @@ const Carousel_3D = ({images}) =>{
             `
             carousel.current.children[i].style.opacity = '1';
         }
+        // when first render IOS (safari ?) is not working animation with css
+        // so i use web API animate() 
+        const keyFrames = [
+            { transform : 'rotateY(-360deg)'},
+        ]
+        const options = {
+            delay:1200,
+            duration:5000,
+            iterations:Infinity,
+        }
+        carousel.current.animate(keyFrames,options);
     },[images]);
     
     useEffect(() => {

@@ -25,7 +25,8 @@ const Carousel = ({carouselImages}) => {
     },[images])
     
     
-    function prev(){
+    function prev(e){
+        e.preventDefault();
         // 12345 => 23451 => 12345
         const {current} = slider;
         console.log("images",images)
@@ -47,8 +48,9 @@ const Carousel = ({carouselImages}) => {
         // setImages(images=>[images[images.length-1]].concat(images.slice(0,images.length-1)))
         
     }
-    function next(){
-        const {current} =slider;
+    function next(e){
+        e.preventDefault();
+            const {current} =slider;
        
             if(direction === 0){
             current.prepend(current.lastChild);

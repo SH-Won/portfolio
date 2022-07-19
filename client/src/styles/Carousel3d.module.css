@@ -8,6 +8,7 @@
     align-items: center;
     box-sizing: border-box;
     perspective: 800px;
+
 }
 .carousel{
     position:relative;
@@ -15,10 +16,11 @@
     height:100%;
     
     transform-style: preserve-3d;
-    -webkit-animation: webkit-bingle 5s 1.5s infinite linear;
+    /* -webkit-animation: webkit-bingle 5s 1.5s infinite linear;
     -moz-animation: moz-bingle 5s 1.5s infinite linear;
     -o-animation: o-bingle 5s 1.5s infinite linear;
-    animation: bingle 5s 1.5s infinite linear;
+    animation: bingle 5s 1.5s infinite linear; */
+    
 }
 .panel{
     position:absolute;
