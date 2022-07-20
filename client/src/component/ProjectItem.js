@@ -31,7 +31,7 @@ const ProjectItem = ({project}) => {
       <article className="project-card" key={project._id}>
         <Carousel carouselImages={project.url} />
         <section className="project-card-explain">
-          <h1>{project.title}</h1>
+          <h3>{project.title}</h3>
           <span>{project.explain}</span>
           {information()}
           {tools()}

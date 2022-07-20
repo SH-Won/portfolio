@@ -1,8 +1,7 @@
 .project-container{
     
     width:100%;
-    padding:0;
-    margin:3rem auto;
+    margin:1rem auto;
     max-width:1200px;
 }
 .project-card-container{
@@ -71,8 +70,8 @@
     margin:1rem 0 1.2rem 0;
 }
 .project-card-explain > span{
-    font-size: 1.2rem;
-    background: linear-gradient(to right,#f7c3b9, #fcdaa7);
+    font-size: 1.1rem;
+    background: linear-gradient(to right,#f7d1c4, #f77d0a);
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;
     margin-bottom: .5rem;
