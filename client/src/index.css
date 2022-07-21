@@ -33,24 +33,23 @@ body {
   padding:3rem 0;
 }
 .svg-container{
+  width:80%;
   align-self: flex-end;
-  max-width:700px;
+  max-width:500px;
 }
 .intro__explain{
 
   display:flex;
   flex-direction: column;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   letter-spacing: 0.08em;
-  
   margin:0 3rem;
+  box-sizing: border-box;
 }
 @media screen and (min-width : 700px){
+  
   .intro__explain{
-     position:absolute;
-     top:70%;
-     left:10%;
-     width:55%;
+     width: 60%;
      align-self: flex-start;
   }
 }

@@ -6,7 +6,7 @@ const Skill = () => {
     const scrollRef = useScrollEvent('up');
 
   return (
-    <section style={{boxSizing:'border-box'}} className="container skill" {...scrollRef}>
+    <section name="SKILL" style={{boxSizing:'border-box'}} className="container skill" {...scrollRef}>
       <h2 style={{ textAlign: "center" }}>스킬</h2>
       <Carousel_3D images={skills.map((skill) => skill.url)} />
       
