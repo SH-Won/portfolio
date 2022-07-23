@@ -1,3 +1,12 @@
+// const url= [
+//     "https://res.cloudinary.com/dhjegsbqv/image/upload/v1641977498/gallery/33CE0E57-6AD7-4FC5-9A0F-07C88B57BAFD_ubx9wn.jpg",
+//     "https://res.cloudinary.com/dhjegsbqv/image/upload/v1641977499/gallery/62380A35-B07D-4761-AA1B-A84F1AD28DFB_utsiza.jpg",
+//     "https://res.cloudinary.com/dhjegsbqv/image/upload/v1641977499/gallery/89D0E27C-47A2-4599-A18F-964F27BAE600_vgs7g5.jpg",
+//     "https://res.cloudinary.com/dhjegsbqv/image/upload/v1641977499/gallery/CB492CA9-BC07-441C-AFC6-8C57F707DB1A_j6nztt.jpg",
+//     "https://res.cloudinary.com/dhjegsbqv/image/upload/v1641977499/gallery/1FD44AF1-B330-49C6-8571-10C9C9C82185_arq3mj.jpg",
+//     "https://res.cloudinary.com/dhjegsbqv/image/upload/v1641977499/gallery/7043025C-8BD9-4BDD-9158-821B34AB9958_sux7ux.jpg",
+//     "https://res.cloudinary.com/dhjegsbqv/image/upload/v1641977499/gallery/E78A4A90-8265-448B-870C-0AA96A128492_bzb7vl.jpg",        
+// ]
 const projects = [
     {
         _id:0,
@@ -9,16 +18,12 @@ const projects = [
             'fetch 함수를 이용하여 CRUD',
             '재사용 가능한 component 를 만들어 사용',
         ], 
-       url:[
-        "https://res.cloudinary.com/dhjegsbqv/image/upload/v1641977498/gallery/33CE0E57-6AD7-4FC5-9A0F-07C88B57BAFD_ubx9wn.jpg",
-        "https://res.cloudinary.com/dhjegsbqv/image/upload/v1641977499/gallery/62380A35-B07D-4761-AA1B-A84F1AD28DFB_utsiza.jpg",
-        "https://res.cloudinary.com/dhjegsbqv/image/upload/v1641977499/gallery/89D0E27C-47A2-4599-A18F-964F27BAE600_vgs7g5.jpg",
-        "https://res.cloudinary.com/dhjegsbqv/image/upload/v1641977499/gallery/CB492CA9-BC07-441C-AFC6-8C57F707DB1A_j6nztt.jpg",
-        "https://res.cloudinary.com/dhjegsbqv/image/upload/v1641977499/gallery/1FD44AF1-B330-49C6-8571-10C9C9C82185_arq3mj.jpg",
-        "https://res.cloudinary.com/dhjegsbqv/image/upload/v1641977499/gallery/7043025C-8BD9-4BDD-9158-821B34AB9958_sux7ux.jpg",
-        "https://res.cloudinary.com/dhjegsbqv/image/upload/v1641977499/gallery/E78A4A90-8265-448B-870C-0AA96A128492_bzb7vl.jpg",        
-         ],
-
+       url :[
+           'https://res.cloudinary.com/dhjegsbqv/image/upload/v1658565409/shblog1_sweccv.png',
+           'https://res.cloudinary.com/dhjegsbqv/image/upload/v1658565409/shblog2_xlvobe.png',
+           'https://res.cloudinary.com/dhjegsbqv/image/upload/v1658565409/shblog3_gicxye.png',
+           'https://res.cloudinary.com/dhjegsbqv/image/upload/v1658565408/shblog4_lmgypr.png',
+       ],
        tools:['JavaScript','webpack','quill','express','mongoose','cloudinary',],
         details:[],
         github:'https://github.com/SH-Won/SH-blog',

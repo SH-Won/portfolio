@@ -9,8 +9,7 @@ const App = () => {
     <div className="App">
         <Header/>
         <a name="INTRO"><Intro/></a>
-        {/* <a name="SKILL"><Skill/></a> */}
-        <Skill/>
+        <a name="SKILL"><Skill/></a>
         <a name="PROJECT"><Project/></a>
     </div>
   )
